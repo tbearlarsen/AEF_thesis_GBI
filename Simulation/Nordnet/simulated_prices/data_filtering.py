@@ -19,11 +19,13 @@ def main():
         return yp
 
     for name, path in file_paths.items():
-        print(f"Cleaning {name}")
+        print(f"Converting {name}")
         data=pd.read_excel(path,header=None)
         yearly_data=yearly_price(data,ppa)
         yearly_data.to_excel(f"/Users/osito/Library/CloudStorage/OneDrive-CBS-CopenhagenBusinessSchool/Masters/3. Semester/Library/AEF_thesis_GBI/Simulation/Nordnet/simulated_prices/10 year simulation GBM/{name}_yearly_conversion.xlsx",index=False,header=False)
-        print(f"Cleaning complete\n")
+        print(f"Conversion complete\n")
+
+    print("All conversions complete")
 
 if __name__ == "__main__":
     main()
