@@ -1,1 +1,1 @@
-# AEF_thesis_GBI
+# AEF_msc_thesis_GBI

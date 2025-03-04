@@ -1,0 +1,16 @@
+,Return Forecast,Volatility Forecast
+Large Cap,0.09,0.15
+Mid Cap,0.11,0.16
+Small Cap,0.12,0.17
+International Developed,0.07,0.15
+Emerging Markets,0.09,0.17
+US Agg Bond,0.04,0.05
+US High Yield,0.06,0.09
+US Treasury,0.03,0.03
+Corporate,0.05,0.07
+Gold,0.06,0.19
+Oil,0.04,0.32
+Private Equity,0.15,0.28
+Venture Capital,0.16,0.3
+Angel Venture,-0.01,0.82
+Cash,0.01,0.001

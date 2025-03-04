@@ -1,0 +1,9 @@
+,Small Cap,US Agg Bond,Gold,Private Equity,Venture Capital,Angel Venture,Cash,Corporate
+Small Cap,1,-0.087,-0.01,0.786,0.687,0.458,0,0.237
+US Agg Bond,-0.087,1,0.408,0.034,-0.11,-0.01,0,0.812
+Gold,-0.01,0.408,1,0.03,0.026,-0.01,0,0.352
+Private Equity,0.786,0.034,0.03,1,0.57,0.922,0,0.367
+Venture Capital,0.687,-0.11,0.026,0.57,1,0.825,0,0.161
+Angel Venture,0.458,-0.01,-0.01,0.922,0.825,1,0,0.213
+Cash,0,0,0,0,0,0,1,0
+Corporate,0.237,0.812,0.352,0.367,0.161,0.213,0,1
