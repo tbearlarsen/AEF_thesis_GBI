@@ -4,77 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e8cbe38-0d52-4137-a6e3-f66f4874feec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/codelib/Johan/portfolio_optimization/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codelib/Johan/portfolio_optimization/optimizers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codelib/Johan/statistics/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codelib/Johan/visualization/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/AEF_thesis_GBI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AEF_thesis_GBI.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="8e8cbe38-0d52-4137-a6e3-f66f4874feec" name="Changes" comment="Reorganising the repo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python Course Literature/Week 7 Vasicek/curve_and_cash_flow_class.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Python Course Literature/Week 7 Vasicek/curve_and_cash_flow_class.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python Course Literature/Week 7 Vasicek/exercises_week_7.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Python Course Literature/Week 7 Vasicek/exercises_week_7.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python Course Literature/Week 7 Vasicek/extracting_yield_curves.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Python Course Literature/Week 7 Vasicek/extracting_yield_curves.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simulation/Correlations/Correlations_V1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Correlations/Correlations_V1.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simulation/Correlations/Correlations_V2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Correlations/Correlations_V2.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/EUNK_sum_stat.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/EUNK_sum_stat.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/EUNK_yearly.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/EUNK_yearly.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/EUNK_yearly_returns.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/EUNK_yearly_returns.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/IUSN_sum_stat.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/IUSN_sum_stat.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/IUSN_yearly.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/IUSN_yearly.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/IUSN_yearly_returns.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/IUSN_yearly_returns.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/JGHY_sum_stat.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/JGHY_sum_stat.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/JGHY_yearly.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/JGHY_yearly.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/JGHY_yearly_returns.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/JGHY_yearly_returns.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/LYXF_sum_stat.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/LYXF_sum_stat.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/LYXF_yearly.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/LYXF_yearly.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/LYXF_yearly_returns.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/LYXF_yearly_returns.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SXR4_sum_stat.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SXR4_sum_stat.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SXR4_yearly.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SXR4_yearly.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SXR4_yearly_returns.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SXR4_yearly_returns.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SXR8_sum_stat.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SXR8_sum_stat.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SXR8_yearly.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SXR8_yearly.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SXR8_yearly_returns.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SXR8_yearly_returns.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SYBA_sum_stat.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SYBA_sum_stat.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SYBA_yearly.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SYBA_yearly.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SYBA_yearly_returns.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SYBA_yearly_returns.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SYBB_sum_stat.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SYBB_sum_stat.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SYBB_yearly.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SYBB_yearly.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SYBB_yearly_returns.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SYBB_yearly_returns.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SYBC_sum_stat.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SYBC_sum_stat.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SYBC_yearly.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SYBC_yearly.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SYBC_yearly_returns.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SYBC_yearly_returns.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/JGHY_sim_price.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/data_filtering.py" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/data_filtering.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/price_to_return_coversion.py" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/price_to_return_coversion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codelib/dal/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Models/NA.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codelib/dal/fred_yield_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/dal/fred_yield_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codelib/fixed_income/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Models/NA2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codelib/fixed_income/cash_flows.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/fixed_income/cash_flows.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codelib/fixed_income/curves/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codelib/fixed_income/curves/cir_curve.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/fixed_income/curves/cir_curve.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codelib/fixed_income/curves/constant_curve.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/fixed_income/curves/constant_curve.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codelib/fixed_income/curves/curve_interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/fixed_income/curves/curve_interface.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codelib/fixed_income/curves/nelson_siegel_curve.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/fixed_income/curves/nelson_siegel_curve.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codelib/fixed_income/curves/nelson_siegel_svensson_curve.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/fixed_income/curves/nelson_siegel_svensson_curve.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codelib/fixed_income/curves/vasicek_curve.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/fixed_income/curves/vasicek_curve.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codelib/portfolio_optimization/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/dal/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codelib/portfolio_optimization/black_litterman.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/portfolio_optimization/black_litterman.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codelib/portfolio_optimization/diversification.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/portfolio_optimization/diversification.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codelib/portfolio_optimization/mean_variance.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/portfolio_optimization/mean_variance.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codelib/portfolio_optimization/optimizers.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/fixed_income/curves/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codelib/portfolio_optimization/risk_budget.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/portfolio_optimization/risk_budget.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codelib/portfolio_optimization/risk_metrics.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/portfolio_optimization/risk_metrics.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codelib/statistics/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codelib/statistics/cornish_fisher.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/statistics/cornish_fisher.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codelib/statistics/fully_flexible_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/statistics/fully_flexible_views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codelib/statistics/historical_probabilities.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/statistics/historical_probabilities.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codelib/statistics/moments.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/statistics/moments.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codelib/statistics/regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/statistics/regression.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codelib/statistics/robust_covariance.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/statistics/robust_covariance.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codelib/visualization/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/fixed_income/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codelib/visualization/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/visualization/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codelib/visualization/layout.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/visualization/layout.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation/Short_rate_simulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Short_rate_simulation.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,12 +29,12 @@
     &quot;assignee&quot;: &quot;tbearlarsen&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:tbearlarsen/AEF_thesis_GBI.git",
-    "accountId": "db91460d-cf87-4809-be42-b6e7380d49c3"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:tbearlarsen/AEF_thesis_GBI.git&quot;,
+    &quot;accountId&quot;: &quot;db91460d-cf87-4809-be42-b6e7380d49c3&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 7
@@ -116,23 +48,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.data_filtering.executor": "Run",
-    "Python.price_to_return_coversion.executor": "Run",
-    "Python.sum_stat.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.data_filtering.executor&quot;: &quot;Run&quot;,
+    &quot;Python.price_to_return_coversion.executor&quot;: &quot;Run&quot;,
+    &quot;Python.sum_stat.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/codelib/Johan" />
@@ -298,12 +230,26 @@
       <option name="presentableId" value="Default" />
       <updated>1741196330842</updated>
       <workItem from="1741196332266" duration="81000" />
-      <workItem from="1741250899980" duration="5715000" />
+      <workItem from="1741250899980" duration="5777000" />
+      <workItem from="1741263245011" duration="1405000" />
     </task>
+    <task id="LOCAL-00001" summary="Reorganising the repo">
+      <option name="closed" value="true" />
+      <created>1741262741909</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1741262741909</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Reorganising the repo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reorganising the repo" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Thesis_M_Sc__AEF$price_to_return_coversion.coverage" NAME="price_to_return_coversion Coverage Results" MODIFIED="1741252252089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices" />
