@@ -1,57 +1,291 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="8e8cbe38-0d52-4137-a6e3-f66f4874feec" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Thesis Repo.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codelib/Johan/portfolio_optimization/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codelib/Johan/portfolio_optimization/optimizers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codelib/Johan/statistics/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codelib/Johan/visualization/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/AEF_thesis_GBI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AEF_thesis_GBI.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Course Literature/Week 7 Vasicek/curve_and_cash_flow_class.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Python Course Literature/Week 7 Vasicek/curve_and_cash_flow_class.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Course Literature/Week 7 Vasicek/exercises_week_7.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Python Course Literature/Week 7 Vasicek/exercises_week_7.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Course Literature/Week 7 Vasicek/extracting_yield_curves.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Python Course Literature/Week 7 Vasicek/extracting_yield_curves.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation/Correlations/Correlations_V1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Correlations/Correlations_V1.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation/Correlations/Correlations_V2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Correlations/Correlations_V2.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/EUNK_sum_stat.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/EUNK_sum_stat.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/EUNK_yearly.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/EUNK_yearly.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/EUNK_yearly_returns.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/EUNK_yearly_returns.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/IUSN_sum_stat.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/IUSN_sum_stat.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/IUSN_yearly.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/IUSN_yearly.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/IUSN_yearly_returns.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/IUSN_yearly_returns.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/JGHY_sum_stat.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/JGHY_sum_stat.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/JGHY_yearly.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/JGHY_yearly.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/JGHY_yearly_returns.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/JGHY_yearly_returns.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/LYXF_sum_stat.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/LYXF_sum_stat.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/LYXF_yearly.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/LYXF_yearly.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/LYXF_yearly_returns.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/LYXF_yearly_returns.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SXR4_sum_stat.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SXR4_sum_stat.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SXR4_yearly.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SXR4_yearly.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SXR4_yearly_returns.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SXR4_yearly_returns.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SXR8_sum_stat.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SXR8_sum_stat.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SXR8_yearly.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SXR8_yearly.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SXR8_yearly_returns.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SXR8_yearly_returns.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SYBA_sum_stat.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SYBA_sum_stat.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SYBA_yearly.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SYBA_yearly.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SYBA_yearly_returns.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SYBA_yearly_returns.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SYBB_sum_stat.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SYBB_sum_stat.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SYBB_yearly.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SYBB_yearly.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SYBB_yearly_returns.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SYBB_yearly_returns.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SYBC_sum_stat.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SYBC_sum_stat.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SYBC_yearly.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SYBC_yearly.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SYBC_yearly_returns.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/10 year simulation GBM/Yearly Data/SYBC_yearly_returns.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/JGHY_sim_price.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/data_filtering.py" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/data_filtering.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/price_to_return_coversion.py" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices/price_to_return_coversion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codelib/dal/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Models/NA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codelib/dal/fred_yield_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/dal/fred_yield_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codelib/fixed_income/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Models/NA2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codelib/fixed_income/cash_flows.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/fixed_income/cash_flows.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codelib/fixed_income/curves/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codelib/fixed_income/curves/cir_curve.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/fixed_income/curves/cir_curve.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codelib/fixed_income/curves/constant_curve.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/fixed_income/curves/constant_curve.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codelib/fixed_income/curves/curve_interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/fixed_income/curves/curve_interface.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codelib/fixed_income/curves/nelson_siegel_curve.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/fixed_income/curves/nelson_siegel_curve.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codelib/fixed_income/curves/nelson_siegel_svensson_curve.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/fixed_income/curves/nelson_siegel_svensson_curve.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codelib/fixed_income/curves/vasicek_curve.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/fixed_income/curves/vasicek_curve.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codelib/portfolio_optimization/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/dal/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codelib/portfolio_optimization/black_litterman.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/portfolio_optimization/black_litterman.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codelib/portfolio_optimization/diversification.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/portfolio_optimization/diversification.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codelib/portfolio_optimization/mean_variance.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/portfolio_optimization/mean_variance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codelib/portfolio_optimization/optimizers.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/fixed_income/curves/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codelib/portfolio_optimization/risk_budget.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/portfolio_optimization/risk_budget.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codelib/portfolio_optimization/risk_metrics.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/portfolio_optimization/risk_metrics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codelib/statistics/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codelib/statistics/cornish_fisher.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/statistics/cornish_fisher.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codelib/statistics/fully_flexible_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/statistics/fully_flexible_views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codelib/statistics/historical_probabilities.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/statistics/historical_probabilities.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codelib/statistics/moments.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/statistics/moments.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codelib/statistics/regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/statistics/regression.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codelib/statistics/robust_covariance.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/statistics/robust_covariance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codelib/visualization/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/fixed_income/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codelib/visualization/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/visualization/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codelib/visualization/layout.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Johan/visualization/layout.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "tbearlarsen"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;tbearlarsen&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "git@github.com:tbearlarsen/AEF_thesis_GBI.git",
-    "accountId": "63b1e6c6-18af-4804-95d0-ee90d1a58443"
+    "accountId": "db91460d-cf87-4809-be42-b6e7380d49c3"
   }
 }]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2tuK4ekbJAFrUnusHeR6cmtKfWP" />
+  <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.data_filtering.executor": "Run",
+    "Python.price_to_return_coversion.executor": "Run",
+    "Python.sum_stat.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/codelib/Johan" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DjangoTestsConfigurationType">
+      <module name="Thesis Repo" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="Thesis Repo" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Python.FlaskServer">
+      <module name="Thesis Repo" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="Thesis Repo" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Docutils task">
+      <module name="Thesis Repo" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Sphinx task">
+      <module name="Thesis Repo" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Autodetect">
+      <module name="Thesis Repo" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <module name="Thesis Repo" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-PY-243.24978.54" />
-        <option value="bundled-python-sdk-91e3b7efe1d4-466328ff949b-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.24978.54" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-PY-243.25659.43" />
+        <option value="bundled-python-sdk-181015f7ab06-4df51de95216-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.25659.43" />
       </set>
     </attachedChunks>
   </component>
@@ -64,10 +298,16 @@
       <option name="presentableId" value="Default" />
       <updated>1741196330842</updated>
       <workItem from="1741196332266" duration="81000" />
+      <workItem from="1741250899980" duration="5715000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Thesis_M_Sc__AEF$price_to_return_coversion.coverage" NAME="price_to_return_coversion Coverage Results" MODIFIED="1741252252089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices" />
+    <SUITE FILE_PATH="coverage/Thesis_M_Sc__AEF$sum_stat.coverage" NAME="sum_stat Coverage Results" MODIFIED="1741252264293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices" />
+    <SUITE FILE_PATH="coverage/Thesis_M_Sc__AEF$data_filtering.coverage" NAME="data_filtering Coverage Results" MODIFIED="1741252031493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices" />
   </component>
 </project>
