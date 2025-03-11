@@ -241,9 +241,9 @@ class PortfolioOptimizer:
 
 if __name__ == "__main__":
     # Example usage – adjust file paths as needed.
-    goal_data_path = r"C:\Users\admin\Desktop\Thesis\AEF_msc_thesis_GBI\Example Goal Details.csv"
-    capmkt_path = r"C:\Users\admin\Desktop\Thesis\AEF_msc_thesis_GBI\Capital Market Expectations.csv"
-    correlations_path = r"C:\Users\admin\Desktop\Thesis\AEF_msc_thesis_GBI\Correlations - Kitchen Sink.csv"
+    goal_data_path = r"/Users/osito/Library/CloudStorage/OneDrive-CBS-CopenhagenBusinessSchool/Masters/3. Semester/Library/AEF_thesis_GBI/Example Goal Details.csv"
+    capmkt_path = r"/Users/osito/Library/CloudStorage/OneDrive-CBS-CopenhagenBusinessSchool/Masters/3. Semester/Library/AEF_thesis_GBI/Capital Market Expectations.csv"
+    correlations_path = r"/Users/osito/Library/CloudStorage/OneDrive-CBS-CopenhagenBusinessSchool/Masters/3. Semester/Library/AEF_thesis_GBI/Correlations - Kitchen Sink.csv"
     pool = 4654000
 
     optimizer = PortfolioOptimizer(goal_data_path, capmkt_path, correlations_path, pool)
