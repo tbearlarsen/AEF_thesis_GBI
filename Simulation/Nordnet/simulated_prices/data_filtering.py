@@ -4,8 +4,8 @@ import pandas as pd
 
 def main():
     root = subprocess.run(["git", "rev-parse", "--show-toplevel"], capture_output=True, text=True).stdout.strip()
-    data_folder=os.path.join(root,"Simulation","Nordnet","simulated_prices","10 year simulation GBM")
-    output_folder = os.path.join(root, "Simulation", "Nordnet", "simulated_prices", "10 year simulation GBM", "Yearly Data")
+    data_folder = os.path.join(root, "Simulation", "Nordnet", "simulated_prices", "10 year simulation GBM")
+    output_folder = os.path.join(root, "Simulation", "Nordnet", "simulated_prices", "10 year simulation GBM", "Yearly Data", "Test")
 
     file_directory = {
         "EUNK": "EUNK_sim_price.xlsx",
@@ -19,9 +19,10 @@ def main():
         "SYBC": "SYBC_sim_price.xlsx"
     }
 
-    def yearly_price(file,ppa=255):
-        yp=file[ppa-1::ppa]
-        return yp
+    def yearly_price(file, ppa=255):
+        first_row = file.iloc[[0]]  # Include the first row
+        yearly_rows = file[ppa-1::ppa]
+        return pd.concat([first_row, yearly_rows])
 
     total_files = len(file_directory)
     for i, (name, file) in enumerate(file_directory.items(), start=1):

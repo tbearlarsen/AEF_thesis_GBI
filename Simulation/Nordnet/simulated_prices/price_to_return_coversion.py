@@ -31,7 +31,7 @@ def main():
         print(f"Conversion complete\n"
               f"Exported to {output_path}\n\n")
 
-    print("All conversions complete")
+    print("ALL CONVERSIONS COMPLETE")
 
 if __name__ == "__main__":
     main()
