@@ -1,34 +1,34 @@
 import numpy as np
-from scipy.stats import norm
 import pandas as pd
+from scipy.stats import norm
 from scipy.optimize import minimize
 import matplotlib.pyplot as plt
 
 
-class PortfolioOptimizer:
-    def __init__(self, goal_data_path, capmkt_path, correlations_path, pool, n_trials=10 ** 5):
+###############################################################################
+# Data Handling Class
+###############################################################################
+class PortfolioData:
+    def __init__(self, goal_data_path, capmkt_path, correlations_path):
         """
-        Initialise the optimiser with file paths, pool of wealth and number of Monte Carlo trials.
+        Initialise the data handler with file paths.
         """
         self.goal_data_path = goal_data_path
         self.capmkt_path = capmkt_path
         self.correlations_path = correlations_path
-        self.pool = pool
-        self.n_trials = n_trials
 
-        # Load and prepare data
         self._load_data()
         self._initialize_parameters()
 
     def _load_data(self):
-        """Load CSV data."""
+        """Load CSV data from file paths."""
         self.goal_data_raw = pd.read_csv(self.goal_data_path)
         self.capmkt_raw = pd.read_csv(self.capmkt_path)
         self.correlations_raw = pd.read_csv(self.correlations_path)
 
     def _initialize_parameters(self):
         """
-        Set key parameters including the number of assets, goals, expected returns,
+        Set key parameters including number of assets, goals, expected returns,
         asset names, the covariance matrix and goal vectors.
         """
         self.num_assets = len(self.capmkt_raw.iloc[:, 1])
@@ -49,7 +49,7 @@ class PortfolioOptimizer:
                 )
 
         # Parse goal data.
-        # Here we assume four goals (A, B, C, D) where each goal vector is of the form:
+        # We assume four goals (A, B, C, D) with each goal vector of the form:
         # [value ratio, funding requirement, time horizon]
         self.goal_vectors = {}
         goal_labels = ["A", "B", "C", "D"]
@@ -64,6 +64,30 @@ class PortfolioOptimizer:
         # Starting weights: random initialisation normalised to sum to 1.
         self.starting_weights = np.random.uniform(0, 1, self.num_assets)
         self.starting_weights /= np.sum(self.starting_weights)
+
+
+###############################################################################
+# Optimiser Class
+###############################################################################
+class PortfolioOptimizer:
+    def __init__(self, data: PortfolioData, pool, n_trials=10 ** 5):
+        """
+        Initialise the optimiser with a PortfolioData instance, pool of wealth,
+        and number of Monte Carlo trials.
+        """
+        self.data = data
+        self.pool = pool
+        self.n_trials = n_trials
+
+        # Set attributes from the data object.
+        self.num_assets = data.num_assets
+        self.num_goals = data.num_goals
+        self.return_vector = data.return_vector
+        self.asset_names = data.asset_names
+        self.covariances = data.covariances
+        self.goal_vectors = data.goal_vectors
+        self.goal_labels = data.goal_labels
+        self.starting_weights = data.starting_weights
 
     # Static methods for basic functions.
     @staticmethod
@@ -190,9 +214,8 @@ class PortfolioOptimizer:
 
         Parameters:
             goal (str or list): A single goal label (e.g. "A"), a list of goal labels,
-                or "all" to plot every goal.
+                                or "all" to plot every goal.
         """
-        # Determine which goal(s) to plot.
         if isinstance(goal, str):
             if goal.lower() == "all":
                 goal_list = self.goal_labels
@@ -203,7 +226,6 @@ class PortfolioOptimizer:
         else:
             raise ValueError("The 'goal' parameter must be a string or list of strings.")
 
-        # Loop through each goal and generate a plot.
         for g in goal_list:
             if g not in self.optimal_weights:
                 print(f"Goal {g} not found in optimal weights.")
@@ -230,21 +252,38 @@ class PortfolioOptimizer:
     def run(self):
         """
         Run the complete optimisation process.
+        Returns a dictionary with key output variables.
         """
         self.optimize_within_goal_allocation()
         self.simulate_across_goal_allocation()
         self.compute_aggregate_portfolio()
-        # Plot all goals; you can change the argument to a specific goal or list of goals.
         self.plot_goal_allocation("all")
         self.print_results()
+        return {
+            "optimal_goal_weights": self.optimal_goal_weights,
+            "optimal_aggregate_portfolio": self.optimal_aggregate_portfolio,
+            "optimal_subportfolios": self.optimal_subportfolios
+        }
 
 
+###############################################################################
+# Example Usage
+###############################################################################
 if __name__ == "__main__":
-    # Example usage – adjust file paths as needed.
-    goal_data_path = r"/Users/osito/Library/CloudStorage/OneDrive-CBS-CopenhagenBusinessSchool/Masters/3. Semester/Library/AEF_thesis_GBI/Example Goal Details.csv"
-    capmkt_path = r"/Users/osito/Library/CloudStorage/OneDrive-CBS-CopenhagenBusinessSchool/Masters/3. Semester/Library/AEF_thesis_GBI/Capital Market Expectations.csv"
-    correlations_path = r"/Users/osito/Library/CloudStorage/OneDrive-CBS-CopenhagenBusinessSchool/Masters/3. Semester/Library/AEF_thesis_GBI/Correlations - Kitchen Sink.csv"
+    # Adjust file paths as needed.
+    goal_data_path = r"C:\Users\admin\Desktop\Thesis\AEF_msc_thesis_GBI\Example Goal Details.csv"
+    capmkt_path = r"C:\Users\admin\Desktop\Thesis\AEF_msc_thesis_GBI\Capital Market Expectations.csv"
+    correlations_path = r"C:\Users\admin\Desktop\Thesis\AEF_msc_thesis_GBI\Correlations - Kitchen Sink.csv"
     pool = 4654000
 
-    optimizer = PortfolioOptimizer(goal_data_path, capmkt_path, correlations_path, pool)
-    optimizer.run()
+    # Create a data handler instance.
+    data = PortfolioData(goal_data_path, capmkt_path, correlations_path)
+    # Create an optimiser instance using the data.
+    optimizer = PortfolioOptimizer(data, pool)
+    results = optimizer.run()
+
+    # Print returned variables.
+    print("\nReturned Variables:")
+    for key, value in results.items():
+        print(f"{key}:")
+        print(value)
