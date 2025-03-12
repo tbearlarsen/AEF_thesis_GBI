@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e8cbe38-0d52-4137-a6e3-f66f4874feec" name="Changes" comment="Reorganising the repo">
+      <change afterPath="$PROJECT_DIR$/GBI Optimisation/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GBI Optimisation/opt.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GBI Optimisation/Data/Example Goal Details.csv" beforeDir="false" afterPath="$PROJECT_DIR$/GBI Optimisation/Data/Example Goal Details.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/gbm_etf_simulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/gbm_etf_simulation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codelib/Models/NA2.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Models/gbi_optimiser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codelib/Models/geometric_brownian_motion_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Models/geometric_brownian_motion_model.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,12 +34,12 @@
     &quot;assignee&quot;: &quot;tbearlarsen&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:tbearlarsen/AEF_thesis_GBI.git",
-    "accountId": "63b1e6c6-18af-4804-95d0-ee90d1a58443"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:tbearlarsen/AEF_thesis_GBI.git&quot;,
+    &quot;accountId&quot;: &quot;63b1e6c6-18af-4804-95d0-ee90d1a58443&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 7
@@ -66,7 +72,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/codelib/Johan" />
+      <recent name="C:\Users\thorb\Documents\Github Repositories\AEF_thesis_GBI\GBI Optimisation\Data" />
+      <recent name="C:\Users\thorb\Documents\Github Repositories\AEF_thesis_GBI\Miscellaneous\Archive" />
+      <recent name="C:\Users\thorb\Documents\Github Repositories\AEF_thesis_GBI\Miscellaneous" />
+      <recent name="C:\Users\thorb\Documents\Github Repositories\AEF_thesis_GBI\Archive" />
+      <recent name="C:\Users\thorb\Documents\Github Repositories\AEF_thesis_GBI\codelib" />
     </key>
   </component>
   <component name="RunManager">
@@ -235,6 +245,7 @@
       <workItem from="1741681267577" duration="83000" />
       <workItem from="1741681358931" duration="3778000" />
       <workItem from="1741689433234" duration="1184000" />
+      <workItem from="1741768966464" duration="9575000" />
     </task>
     <task id="LOCAL-00001" summary="Reorganising the repo">
       <option name="closed" value="true" />
@@ -252,16 +263,33 @@
       <option name="project" value="LOCAL" />
       <updated>1741265379846</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="I dont know">
+      <option name="closed" value="true" />
+      <created>1741769080519</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1741769080519</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Reorganising the repo">
+      <option name="closed" value="true" />
+      <created>1741769253467</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1741769253467</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Reorganising the repo" />
     <MESSAGE value="Misc." />
-    <option name="LAST_COMMIT_MESSAGE" value="Misc." />
+    <MESSAGE value="I dont know" />
+    <MESSAGE value="Reorganising the repo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reorganising the repo" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Thesis_M_Sc__AEF$price_to_return_coversion.coverage" NAME="price_to_return_coversion Coverage Results" MODIFIED="1741252252089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices" />
