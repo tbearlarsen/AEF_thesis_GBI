@@ -1,4 +1,4 @@
-from Models.geometric_brownian_motion_model import GBMSimulator
+from codelib.Models.geometric_brownian_motion_model import GBMSimulator
 import pandas as pd
 
 
