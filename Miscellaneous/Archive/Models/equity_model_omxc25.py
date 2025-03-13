@@ -1,7 +1,6 @@
 import numpy as np
-import pandas as pd
 import matplotlib.pyplot as plt
-from Archive.Data.omxc25_data import close as prices
+from Miscellaneous.Archive.Data.omxc25_data import close as prices
 
 """
 ====================================================================================================
