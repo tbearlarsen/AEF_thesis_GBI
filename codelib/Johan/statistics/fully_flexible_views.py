@@ -341,7 +341,6 @@ class ProbabilitySolver:
                   for is_inequality in self.inequality_constraint_indicators]
 
         # optimization
-        # TODO:: Add analytical gradient and hessian
         opt_params, f, d = fmin_l_bfgs_b(self.objective_function, init_params, bounds=bounds,
                                          approx_grad=True)
 
