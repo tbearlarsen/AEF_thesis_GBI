@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e8cbe38-0d52-4137-a6e3-f66f4874feec" name="Changes" comment="Working on thesis">
-      <change afterPath="$PROJECT_DIR$/GBI Optimisation/Data/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codelib/file_management/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codelib/file_management/dynamic_file_pathing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBI Optimisation/opt.py" beforeDir="false" afterPath="$PROJECT_DIR$/GBI Optimisation/opt.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/gbm_etf_simulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/gbm_etf_simulation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/sim_price/EUNK.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/sim_price/EUNK.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codelib/Models/Model_V2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Models/Model_V2.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codelib/Models/gbi_optimiser.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Models/gbi_optimiser.py" afterDir="false" />
-    </list>
+    <list default="true" id="8e8cbe38-0d52-4137-a6e3-f66f4874feec" name="Changes" comment="Working on thesis" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -252,7 +242,7 @@
       <workItem from="1741681358931" duration="3778000" />
       <workItem from="1741689433234" duration="1184000" />
       <workItem from="1741768966464" duration="10220000" />
-      <workItem from="1741855213998" duration="6636000" />
+      <workItem from="1741855213998" duration="7435000" />
     </task>
     <task id="LOCAL-00001" summary="Reorganising the repo">
       <option name="closed" value="true" />
@@ -302,7 +292,23 @@
       <option name="project" value="LOCAL" />
       <updated>1741855244613</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Working on thesis">
+      <option name="closed" value="true" />
+      <created>1741862013891</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1741862013891</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Working on thesis">
+      <option name="closed" value="true" />
+      <created>1741862054333</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1741862054333</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
