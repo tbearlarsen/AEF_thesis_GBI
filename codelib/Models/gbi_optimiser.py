@@ -194,6 +194,7 @@ class PortfolioOptimizer:
         )
         self.optimal_goal_weights = self.sim_goal_weights[np.argmax(utility), :]
 
+
     def compute_aggregate_portfolio(self):
         """
         Step 3:
@@ -207,6 +208,7 @@ class PortfolioOptimizer:
         # Normalise simulated goal weights so they sum to 1, then compute the aggregate portfolio.
         optimal_goal_weights_norm = self.optimal_goal_weights / np.sum(self.optimal_goal_weights)
         self.optimal_aggregate_portfolio = optimal_goal_weights_norm @ self.optimal_subportfolios
+
 
     def plot_goal_allocation(self, goal="A"):
         """
@@ -259,11 +261,13 @@ class PortfolioOptimizer:
         self.compute_aggregate_portfolio()
         self.plot_goal_allocation("all")
         self.print_results()
-        return {
+        """return {
             "optimal_goal_weights": self.optimal_goal_weights,
             "optimal_aggregate_portfolio": self.optimal_aggregate_portfolio,
             "optimal_subportfolios": self.optimal_subportfolios
-        }
+        }"""
+
+        return self.optimal_goal_weights, self.optimal_aggregate_portfolio
 
 
 ###############################################################################

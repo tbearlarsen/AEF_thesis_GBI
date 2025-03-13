@@ -51,7 +51,7 @@ def main():
         simulated_prices.to_excel(output_path, sheet_name=column, index=False, header=False)
 
         # Calculate the mean price across simulation paths for each simulated time step
-        simulated_means = simulated_prices.max(axis=1)
+        simulated_means = simulated_prices.mean(axis=1)
 
         # Create a date range starting from the day after the last historical date
         last_date = prices.index.max()

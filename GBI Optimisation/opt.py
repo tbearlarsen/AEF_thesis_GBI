@@ -18,16 +18,9 @@ file_directory = {
 Goals=os.path.join(data_folder, file_directory["Goals"])
 CapMktExp=os.path.join(data_folder, file_directory["CapMktExp"])
 Corr=os.path.join(data_folder, file_directory["Corr"])
-pool=4654000
+pool=10000
 
-optimiser = PortfolioOptimizer(Goals, CapMktExp, Corr, pool)
-optimiser.run()
+data = PortfolioData(Goals, CapMktExp, Corr)
+optimiser = PortfolioOptimizer(data, pool)
 
-optimiser.optimize_within_goal_allocation()
-optimiser.simulate_across_goal_allocation()
-optimiser.compute_aggregate_portfolio()
-# Plot all goals; you can change the argument to a specific goal or list of goals.
-optimiser.plot_goal_allocation("all")
-optimiser.print_results()
-# Export all outputs.
-optimiser.export_all_outputs()
+opt_w, opt_agg_p = optimiser.run()
