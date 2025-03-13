@@ -39,8 +39,8 @@ class GBMSimulator:
         mu_annual = mu * self.ppa
         sigma_annual = sigma * np.sqrt(self.ppa)
 
-        print(f"Estimated drift: {mu:.4f}, Annual drift: {mu_annual:.4f}")
-        print(f"Estimated volatility: {sigma:.4f}, Annual volatility: {sigma_annual:.4f}")
+        print(f"Estimated weekly drift: {mu:.4f}, Annual drift: {mu_annual:.4f}")
+        print(f"Estimated weekly volatility: {sigma:.4f}, Annual volatility: {sigma_annual:.4f}")
         return mu, sigma, mu_annual, sigma_annual
 
     def simulate_gbm(self, num_years=45, num_paths=10000):

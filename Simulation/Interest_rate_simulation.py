@@ -1,4 +1,5 @@
-from codelib.Models import VasicekModel
+import pandas as pd
+from Models.vasicek_model import VasicekModel
 
 def main():
     data_file= r"/Simulation/Data/10YBond.xlsx"

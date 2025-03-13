@@ -1,5 +1,6 @@
+import pandas as pd
 import yfinance as yf
-from codelib.Models.geometric_brownian_motion_model import GBMSimulator
+from Models.geometric_brownian_motion_model import GBMSimulator
 
 def main():
     ticker = "^OMXC25"
