@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e8cbe38-0d52-4137-a6e3-f66f4874feec" name="Changes" comment="idk what this is">
-      <change afterPath="$PROJECT_DIR$/JohanExam/Vasicek.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JohanExam/combinedreturns.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="8e8cbe38-0d52-4137-a6e3-f66f4874feec" name="Changes" comment="testing exam johan" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,6 +55,7 @@
   "keyToString": {
     "Python.combinedreturns.executor": "Run",
     "Python.data_filtering.executor": "Run",
+    "Python.opt.executor": "Run",
     "Python.price_to_return_coversion.executor": "Run",
     "Python.sum_stat.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -80,7 +77,7 @@
       <recent name="$PROJECT_DIR$/codelib/Johan" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.opt">
     <configuration default="true" type="DjangoTestsConfigurationType">
       <module name="Thesis Repo" />
       <option name="ENV_FILES" value="" />
@@ -140,6 +137,29 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/JohanExam/combinedreturns.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="opt" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="AEF_thesis_GBI" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GBI Optimisation" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GBI Optimisation/opt.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -247,6 +267,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.opt" />
         <item itemvalue="Python.combinedreturns" />
       </list>
     </recent_temporary>
@@ -273,7 +294,7 @@
       <workItem from="1741268175658" duration="118000" />
       <workItem from="1741268315266" duration="403000" />
       <workItem from="1741853819785" duration="267000" />
-      <workItem from="1741855373461" duration="5218000" />
+      <workItem from="1741855373461" duration="5556000" />
     </task>
     <task id="LOCAL-00001" summary="Reorganising the repo">
       <option name="closed" value="true" />
@@ -291,7 +312,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741848435321</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="testing exam johan">
+      <option name="closed" value="true" />
+      <created>1741865933531</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1741865933531</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,12 +341,14 @@
     <MESSAGE value="Reorganising the repo" />
     <MESSAGE value="Added Johan Exam" />
     <MESSAGE value="idk what this is" />
-    <option name="LAST_COMMIT_MESSAGE" value="idk what this is" />
+    <MESSAGE value="testing exam johan" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing exam johan" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Thesis_M_Sc__AEF$combinedreturns.coverage" NAME="combinedreturns Coverage Results" MODIFIED="1741865237143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/JohanExam" />
     <SUITE FILE_PATH="coverage/Thesis_M_Sc__AEF$sum_stat.coverage" NAME="sum_stat Coverage Results" MODIFIED="1741252264293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices" />
     <SUITE FILE_PATH="coverage/Thesis_M_Sc__AEF$price_to_return_coversion.coverage" NAME="price_to_return_coversion Coverage Results" MODIFIED="1741252252089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices" />
+    <SUITE FILE_PATH="coverage/Thesis_M_Sc__AEF$opt.coverage" NAME="opt Coverage Results" MODIFIED="1741866199127" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/GBI Optimisation" />
     <SUITE FILE_PATH="coverage/Thesis_M_Sc__AEF$data_filtering.coverage" NAME="data_filtering Coverage Results" MODIFIED="1741252031493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices" />
   </component>
 </project>
