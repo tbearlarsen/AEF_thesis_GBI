@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e8cbe38-0d52-4137-a6e3-f66f4874feec" name="Changes" comment="Reorganising the repo">
-      <change afterPath="$PROJECT_DIR$/GBI Optimisation/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GBI Optimisation/opt.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBI Optimisation/Data/Example Goal Details.csv" beforeDir="false" afterPath="$PROJECT_DIR$/GBI Optimisation/Data/Example Goal Details.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/gbm_etf_simulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/gbm_etf_simulation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codelib/Models/NA2.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Models/gbi_optimiser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codelib/Models/geometric_brownian_motion_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Models/geometric_brownian_motion_model.py" afterDir="false" />
-    </list>
+    <list default="true" id="8e8cbe38-0d52-4137-a6e3-f66f4874feec" name="Changes" comment="Working on thesis" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,23 +45,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.data_filtering.executor&quot;: &quot;Run&quot;,
-    &quot;Python.price_to_return_coversion.executor&quot;: &quot;Run&quot;,
-    &quot;Python.sum_stat.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.data_filtering.executor": "Run",
+    "Python.price_to_return_coversion.executor": "Run",
+    "Python.sum_stat.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "<unknown>",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\thorb\Documents\Github Repositories\AEF_thesis_GBI\GBI Optimisation\Data" />
@@ -245,7 +237,7 @@
       <workItem from="1741681267577" duration="83000" />
       <workItem from="1741681358931" duration="3778000" />
       <workItem from="1741689433234" duration="1184000" />
-      <workItem from="1741768966464" duration="9575000" />
+      <workItem from="1741768966464" duration="10220000" />
     </task>
     <task id="LOCAL-00001" summary="Reorganising the repo">
       <option name="closed" value="true" />
@@ -279,7 +271,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741769253467</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Working on thesis">
+      <option name="closed" value="true" />
+      <created>1741780146613</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1741780146613</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,7 +289,8 @@
     <MESSAGE value="Misc." />
     <MESSAGE value="I dont know" />
     <MESSAGE value="Reorganising the repo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reorganising the repo" />
+    <MESSAGE value="Working on thesis" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working on thesis" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Thesis_M_Sc__AEF$price_to_return_coversion.coverage" NAME="price_to_return_coversion Coverage Results" MODIFIED="1741252252089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Simulation/Nordnet/simulated_prices" />
