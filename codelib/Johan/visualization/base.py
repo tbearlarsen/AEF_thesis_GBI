@@ -9,7 +9,7 @@ from matplotlib.colors import LinearSegmentedColormap
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-from codelib.Johan.visualization.layout import default_colors
+from codelib.visualization.layout import default_colors
 from matplotlib.ticker import FuncFormatter
 from numpy import ndarray
 import seaborn as sns
