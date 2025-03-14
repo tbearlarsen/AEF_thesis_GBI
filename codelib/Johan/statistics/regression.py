@@ -1,4 +1,4 @@
-from codelib.statistics.moments import calculate_cov_mat
+from codelib.Johan.statistics.moments import calculate_cov_mat
 
 import numpy as np
 from typing import Union

@@ -3,7 +3,7 @@ Contains implementation of the Nelson-Siegel curves.
 """
 
 # import curve interface
-from codelib.fixed_income.curves.curve_interface import IRateCurve
+from codelib.Johan.fixed_income.curves.curve_interface import IRateCurve
 
 # import other python packages
 import numpy as np

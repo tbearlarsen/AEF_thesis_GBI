@@ -7,145 +7,159 @@ import os
 class VasicekModel:
     def __init__(self, data_file, ppa):
         """
-        Initialise the Vasicek model.
+        Initializes the Vasicek model class.
 
         Parameters:
             data_file : str
-                Path to the Excel file containing the rate data.
+                Path to the interest rate data file.
             ppa : int
-                Periods per annum: the number of observations per year.
+                Periods per annum (e.g., 52 for weekly data).
         """
-        self.data_file = data_file
         self.ppa = ppa
         self.dt = 1 / ppa
+        self.data_file = data_file
         self.rates = self.load_data()
-        self.a_hat = None
-        self.b_hat = None
-        self.sigma_hat = None
+
+        #Parameters initialized as None; will be estimated
+        self.kappa = None  # Mean-reversion speed
+        self.theta = None  # Long-term mean
+        self.beta = None  # Volatility
         self.simulation_data = None
 
     def load_data(self):
-        """Load and clean short rate data from an Excel file."""
-        if not os.path.exists(self.data_file):
-            raise FileNotFoundError(f"File not found: {self.data_file}")
-        rates = pd.read_excel(self.data_file, parse_dates=[0], index_col=0)
-        return rates.dropna()
+        """Load interest rate data from file."""
+        rates = pd.read_excel(self.data_file, parse_dates=True, index_col=0).iloc[:, 0]
+        return rates
 
     def estimate_params(self):
-        """Estimate Vasicek model parameters using OLS regression."""
-        # Create lagged series
+        """Estimate Vasicek parameters via OLS regression."""
+        #Prepare lagged data for regression
         r_t = self.rates[:-1].values
         r_t1 = self.rates[1:].values
 
-        # OLS regression: r_{t+1} = theta + phi * r_t + error
+        #Perform OLS regression (r_{t+1} = theta + phi * r_t + error)
         X = sm.add_constant(r_t)
         model = sm.OLS(r_t1, X).fit()
         print(model.summary())
 
-        theta_hat = model.params[0]
         phi_hat = model.params[1]
+        theta_hat = model.params[0]
 
-        # Recover continuous-time parameters
-        self.a_hat = -np.log(phi_hat) / self.dt
-        self.b_hat = theta_hat / (1 - phi_hat)
+        #Convert discrete parameters into continuous-time Vasicek parameters
+        self.kappa = -np.log(phi_hat) / self.dt
+        self.theta = theta_hat / (1 - phi_hat)
 
-        # Estimate volatility
+        #Estimate volatility parameter
         sigma_eta_hat = np.std(model.resid, ddof=1)
-        self.sigma_hat = sigma_eta_hat * np.sqrt(2 * self.a_hat / (1 - phi_hat ** 2))
+        self.beta = sigma_eta_hat * np.sqrt(2 * self.kappa / (1 - phi_hat ** 2))
 
-        print(f"Estimated a: {self.a_hat}")
-        print(f"Estimated b: {self.b_hat}")
-        print(f"Estimated sigma: {self.sigma_hat}")
+        #Display estimated parameters clearly
+        print(f"Estimated kappa (mean reversion speed): {self.kappa:.4f}")
+        print(f"Estimated theta (long-term mean): {self.theta:.4f}")
+        print(f"Estimated beta (volatility): {self.beta:.4f}")
 
-    def simulate(self, r0, years, num_paths):
+    def simulate(self, initial_short_rate: float, years: float, num_sim: int, z_mat=None):
         """
-        Simulate short rate paths over a specified number of years.
+        Simulate short-rate paths using the Vasicek model.
 
         Parameters:
-            r0 : float
-                The starting short rate.
+            initial_short_rate : float
+                The initial short rate.
             years : float
-                Number of years for the simulation.
-            num_paths : int
-                Number of simulated paths.
+                Simulation horizon in years.
+            num_sim : int
+                Number of simulation paths.
+            z_mat : np.ndarray, optional
+                External matrix of standard normal random shocks.
+                Should have dimensions (num_sim, num_periods).
+                If None, shocks are generated internally.
         """
-        num_periods = int(years * self.ppa)
-        exp_a_dt = np.exp(-self.a_hat * self.dt)
-        sigma_dt = self.sigma_hat * np.sqrt((1 - np.exp(-2 * self.a_hat * self.dt)) / (2 * self.a_hat))
+        if any(param is None for param in [self.kappa, self.theta, self.beta]):
+            raise ValueError("Parameters kappa, theta, and beta must be estimated first. Call estimate_params().")
 
-        sim_rates = np.zeros((num_periods + 1, num_paths))
-        sim_rates[0, :] = r0
+        num_periods = int(years * self.ppa)
+        exp_kappa_dt = np.exp(-self.kappa * self.dt)
+        std_rates = self.beta * np.sqrt((1 - np.exp(-2 * self.kappa * self.dt)) / (2 * self.kappa))
+
+        sim_rates = np.zeros((num_sim, num_periods + 1))
+        sim_rates[:, 0] = initial_short_rate
+
+        # Generate or use provided external random shocks
+        if z_mat is None:
+            eps = np.random.normal(size=(num_sim, num_periods))
+        else:
+            if z_mat.shape != (num_sim, num_periods):
+                raise ValueError(f"z_mat should be of shape ({num_sim}, {num_periods})")
+            eps = z_mat
 
         for t in range(1, num_periods + 1):
-            eps = np.random.normal(size=num_paths)
-            sim_rates[t, :] = (
-                self.b_hat
-                + (sim_rates[t - 1, :] - self.b_hat) * exp_a_dt
-                + sigma_dt * eps
+            sim_rates[:, t] = (
+                    self.theta
+                    + (sim_rates[:, t - 1] - self.theta) * exp_kappa_dt
+                    + std_rates * eps[:, t - 1]
             )
 
-        # Store the simulated paths
         self.simulation_data = sim_rates
         return sim_rates
 
-    def plot_simulation(self, simulation, num_paths_to_plot=10,
-                        xlabel="Periods", ylabel="Short Rate", title="Simulation Paths"):
+    def plot_simulation(self, sim_data, num_paths_to_plot=10, title="Simulated Vasicek Short Rate Paths"):
         """
-        Plot a sample of simulation paths.
+        Plot simulated short rate paths.
 
         Parameters:
-            simulation : np.ndarray
-                Array of simulated short rate paths.
+            sim_data : np.ndarray
+                Simulated short-rate data array.
             num_paths_to_plot : int, optional
-                Number of paths to plot (default is 10).
-            xlabel : str, optional
-                Label for the x-axis (default is "Periods").
-            ylabel : str, optional
-                Label for the y-axis (default is "Short Rate").
+                Number of simulated paths to plot.
             title : str, optional
-                Title for the plot (default is "Simulation Paths").
+                Plot title.
         """
-        plt.figure(figsize=(12, 6))
+        plt.figure(figsize=(10, 6))
         for i in range(num_paths_to_plot):
-            plt.plot(simulation[:, i], lw=1.5, label=f"Path {i + 1}")
-        plt.xlabel(xlabel)
-        plt.ylabel(ylabel)
+            plt.plot(np.arange(sim_data.shape[1]) * self.dt, sim_data[i], label=f'Path {i + 1}', lw=1.5)
+
+        plt.xlabel('Time (Years)')
+        plt.ylabel('Short Rate')
         plt.title(title)
         plt.grid(True)
         plt.legend()
         plt.show()
 
-    def run_model(self, r0, years, num_paths, plot=False, num_paths_to_plot=10):
+    def run_simulation(self, initial_short_rate, years=10, num_sim=10000, plot=True, num_paths_to_plot=10):
         """
-        Run the model:
-          1. Estimate parameters.
-          2. Simulate short rate paths for the specified number of years.
-          3. Optionally plot the simulation.
+        Estimate parameters, run simulations, and plot.
 
         Parameters:
-            r0 : float
-                The starting short rate.
+            initial_short_rate : float
+                Starting value for the short rate.
             years : float
-                Number of years for the simulation.
-            num_paths : int
+                Simulation horizon (in years).
+            num_sim : int
                 Number of simulated paths.
-            plot : bool, optional
-                If True, plots the simulation after running the model.
             num_paths_to_plot : int, optional
-                Number of paths to plot (default is 10).
-
-        Returns:
-            np.ndarray
-                The simulation data covering the specified time horizon.
+                Number of simulated paths to plot if plotting is enabled.
+            plot : bool, optional
+                Whether to plot results after simulation.
         """
         self.estimate_params()
-        simulation = self.simulate(r0, years, num_paths)
+        sim_data = self.simulate(initial_short_rate, years, num_sim)
 
         if plot:
-            self.plot_simulation(simulation, num_paths_to_plot=num_paths_to_plot,
-                                 title="Simulation")
+            self.plot_simulation(sim_data, num_paths_to_plot=num_paths_to_plot)
 
-        return simulation
+        return sim_data
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 class VasicekModelExtended:
@@ -408,3 +422,5 @@ if __name__ == "__main__":
         plot=True,
         num_paths_to_plot=10
     )
+
+

@@ -1,24 +1,23 @@
 import os
 import subprocess
-from codelib.Models.vasicek_model import VasicekModelExtended
+from codelib.Models.vasicek_model import VasicekModel
 
 def main():
     root = subprocess.run(["git", "rev-parse", "--show-toplevel"], capture_output=True, text=True).stdout.strip()
-    data_folder = os.path.join(root, "Archive", "Data")
+    data_folder = os.path.join(root, "Miscellaneous", "Archive", "Data")
 
     data = os.path.join(data_folder, "short_rate.xlsx")
-    model = VasicekModelExtended(data,220)
-    r0=model.rates.iloc[-1,0]
-    simulated_short_rates=model.run_model(
+    model = VasicekModel(data,220)
+    r0=model.rates.iloc[-1]
+
+    sim_prices_short = model.run_simulation(
         r0,
         10,
-        40,
         10000,
-        plot=True,
-        num_paths_to_plot=10
+        plot=True
     )
 
-    return simulated_short_rates
+    return sim_prices_short
 
 if __name__ == "__main__":
     simulated_short_rates=main()

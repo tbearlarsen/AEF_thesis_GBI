@@ -1,8 +1,8 @@
 import numpy as np
 from scipy import stats
 from typing import Tuple, Union, List
-from codelib.statistics.historical_probabilities import equal_weights
-from codelib.portfolio_optimization.risk_metrics import calculate_conditional_value_at_risk, calculate_value_at_risk
+from codelib.Johan.statistics.historical_probabilities import equal_weights
+from codelib.Johan.portfolio_optimization.risk_metrics import calculate_conditional_value_at_risk, calculate_value_at_risk
 
 
 def calculate_marginal_risks_std(weights: np.ndarray, cov_mat: np.ndarray) -> np.ndarray:

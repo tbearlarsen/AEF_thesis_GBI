@@ -3,8 +3,8 @@ Contains cash flow objects.
 """
 
 import numpy as np
-from codelib.fixed_income.curves.curve_interface import IRateCurve
-from codelib.fixed_income.curves.constant_curve import ConstantCurve
+from codelib.Johan.fixed_income.curves.curve_interface import IRateCurve
+from codelib.Johan.fixed_income.curves.constant_curve import ConstantCurve
 from scipy.optimize import bisect
 
 from typing import Union, List
