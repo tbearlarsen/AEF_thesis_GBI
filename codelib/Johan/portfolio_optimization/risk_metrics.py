@@ -1,7 +1,7 @@
 import numpy as np
 from scipy import stats
-from codelib.Johan.statistics.moments import weighted_percentile
-from codelib.Johan.statistics.historical_probabilities import equal_weights
+from codelib.statistics.moments import weighted_percentile
+from codelib.statistics.historical_probabilities import equal_weights
 
 from typing import Union, List
 

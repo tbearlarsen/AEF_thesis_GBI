@@ -1,6 +1,6 @@
 import os
 import subprocess
-from codelib.Models import VasicekModelExtended
+from codelib.Models.vasicek_model import VasicekModelExtended
 
 def main():
     root = subprocess.run(["git", "rev-parse", "--show-toplevel"], capture_output=True, text=True).stdout.strip()
