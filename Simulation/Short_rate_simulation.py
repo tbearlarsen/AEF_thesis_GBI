@@ -14,7 +14,7 @@ def main():
         r0,
         10,
         10000,
-        plot=True
+        plot=False
     )
 
     return sim_prices_short

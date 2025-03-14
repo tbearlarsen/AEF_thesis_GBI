@@ -58,6 +58,8 @@ class VasicekModel:
         print(f"Estimated theta (long-term mean): {self.theta:.4f}")
         print(f"Estimated beta (volatility): {self.beta:.4f}")
 
+        return self.kappa, self.theta, self.beta
+
     def simulate(self, initial_short_rate: float, years: float, num_sim: int, z_mat=None):
         """
         Simulate short-rate paths using the Vasicek model.
