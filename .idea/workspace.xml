@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e8cbe38-0d52-4137-a6e3-f66f4874feec" name="Changes" comment="Reorganising the repo">
-      <change afterPath="$PROJECT_DIR$/GBI Optimisation/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GBI Optimisation/opt.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBI Optimisation/Data/Example Goal Details.csv" beforeDir="false" afterPath="$PROJECT_DIR$/GBI Optimisation/Data/Example Goal Details.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simulation/Nordnet/gbm_etf_simulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Nordnet/gbm_etf_simulation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codelib/Models/NA2.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Models/gbi_optimiser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codelib/Models/geometric_brownian_motion_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/codelib/Models/geometric_brownian_motion_model.py" afterDir="false" />
-    </list>
+    <list default="true" id="8e8cbe38-0d52-4137-a6e3-f66f4874feec" name="Changes" comment="Reorganising the repo" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -279,7 +271,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741769253467</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Reorganising the repo">
+      <option name="closed" value="true" />
+      <created>1741781463985</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1741781463985</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
