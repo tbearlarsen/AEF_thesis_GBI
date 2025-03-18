@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-from Simulation.Data.sp500_data import close as prices
+from Simulation import close as prices
 
 
 class SP500Simulation:

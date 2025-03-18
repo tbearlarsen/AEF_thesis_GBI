@@ -18,7 +18,7 @@ def main():
         horizon=2520,
         export=True,
         filename="simple_forecast.xlsx",
-        work_dir=".",  # Export to the current directory
+        work_dir="..",  # Export to the current directory
         show_details=True,
         plot_paths=True
     )

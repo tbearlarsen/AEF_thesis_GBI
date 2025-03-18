@@ -93,7 +93,7 @@ if __name__ == "__main__":
     """
 
     #Load the data from a module or file, and run the simulation.
-    from Simulation.Data.sp500_data import close as prices
+    from Simulation import close as prices
 
     #Check that the price data is loaded correctly
     if prices.empty:

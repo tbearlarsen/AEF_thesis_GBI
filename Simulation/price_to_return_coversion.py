@@ -4,19 +4,20 @@ import pandas as pd
 
 def main():
     root = subprocess.run(["git", "rev-parse", "--show-toplevel"], capture_output=True, text=True).stdout.strip()
-    data_folder=os.path.join(root, "Simulation", "Nordnet", "simulated_prices", "10 year simulation GBM", "Yearly Data")
-    output_folder = os.path.join(root, "Simulation", "Nordnet", "simulated_prices", "10 year simulation GBM", "Yearly Data")
+    data_folder=os.path.join(root, "GBI Optimisation", "Data", "sim_data_yearly")
+    output_folder=os.path.join(root, "GBI Optimisation", "Data", "sim_data_yearly")
 
     file_directory = {
-        "EUNK": "EUNK_yearly.xlsx",
-        "IUSN": "IUSN_yearly.xlsx",
-        "LYXF": "LYXF_yearly.xlsx",
-        "JGHY": "JGHY_yearly.xlsx",
-        "SXR4": "SXR4_yearly.xlsx",
-        "SXR8": "SXR8_yearly.xlsx",
-        "SYBA": "SYBA_yearly.xlsx",
-        "SYBB": "SYBB_yearly.xlsx",
-        "SYBC": "SYBC_yearly.xlsx"
+        "Ejendomme": "Ejendomme_yearly.xlsx",
+        "EM Aktier": "EM Aktier_yearly.xlsx",
+        "EM Statsobl.": "EM Statsobl._yearly.xlsx",
+        "Globale Aktier": "Globale Aktier_yearly.xlsx",
+        "Hedgefonde": "Hedgefonde_yearly.xlsx",
+        "HY Obl.": "HY Obl._yearly.xlsx",
+        "IG Obl.": "IG Obl._yearly.xlsx",
+        "Infrastruktur": "Infrastruktur_yearly.xlsx",
+        "Private Equity": "Private Equity_yearly.xlsx",
+        "Stats & RK Obl.": "Stats & RK Obl._yearly.xlsx"
     }
 
     total_files=len(file_directory)

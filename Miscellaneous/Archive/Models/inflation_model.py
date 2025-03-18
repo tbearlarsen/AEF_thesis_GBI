@@ -1,10 +1,8 @@
-import numpy as np
-import pandas as pd
 import matplotlib.pyplot as plt
 import statsmodels.api as sm
 from statsmodels.tsa.stattools import adfuller
 from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
-from Simulation.Data.cpi_dk import inflation
+from Simulation import inflation
 from statsmodels.tsa.arima.model import ARIMA
 
 """
