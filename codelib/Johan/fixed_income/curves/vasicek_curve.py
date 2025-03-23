@@ -9,7 +9,6 @@ from codelib.Johan.fixed_income.curves.curve_interface import IRateCurve
 import numpy as np
 import math
 from scipy import optimize
-from typing import Union, Dict
 
 
 class VasicekCurve(IRateCurve):

@@ -1,6 +1,6 @@
 import numpy as np
 from scipy.stats import entropy
-from codelib.portfolio_optimization.risk_metrics import calculate_portfolio_variance, calculate_portfolio_std
+from codelib.Johan.portfolio_optimization.risk_metrics import calculate_portfolio_variance, calculate_portfolio_std
 from typing import Union
 
 """

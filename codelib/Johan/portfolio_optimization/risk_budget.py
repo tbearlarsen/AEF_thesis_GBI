@@ -1,8 +1,8 @@
 import numpy as np
 from scipy import stats
-from typing import Tuple, Union, List
+from typing import Tuple, Union
 from codelib.Johan.statistics.historical_probabilities import equal_weights
-from codelib.Johan.portfolio_optimization.risk_metrics import calculate_conditional_value_at_risk, calculate_value_at_risk
+from codelib.Johan.portfolio_optimization.risk_metrics import calculate_value_at_risk
 
 
 def calculate_marginal_risks_std(weights: np.ndarray, cov_mat: np.ndarray) -> np.ndarray:
@@ -81,6 +81,34 @@ def calculate_marginal_sharpe(weights: np.ndarray, cov_mat: np.ndarray, mu: np.n
     excess_mu = mu - rf
 
     return excess_mu / mr
+
+
+def calculate_risk_adjusted_sharpe(weights: np.ndarray, cov_mat: np.ndarray, mu: np.ndarray, rf: float):
+
+    """
+    Function that calculates risk adjusted Sharpe ratio
+
+    Parameters
+    ----------
+    weights:
+        Portfolio weights
+    cov_mat:
+        Covariance matrix
+    mu:
+        Expected return vector.
+    rf:
+        Risk free rate.
+
+    Returns
+    -------
+    np.ndarray
+        Marginal risks
+    """
+
+    rc = calculate_risk_contributions_std(weights, cov_mat)
+    excess_mu = mu - rf
+
+    return excess_mu / rc
 
 
 def weights_risk_budget_two_assets(sigma1: float, sigma2: float, rho: float, b: float) -> Tuple[float, float]:
@@ -330,7 +358,7 @@ def calculate_risk_contributions_cvar(weights: np.ndarray, x: np.ndarray, p: flo
     Returns
     -------
     np.ndarray
-        Marginal risks.
+        Risk contributions.
 
     Notes
     -----
