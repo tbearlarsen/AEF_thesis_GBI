@@ -4,7 +4,7 @@ import os
 
 def main():
     root = get_root()
-    data = os.path.join(root, "Simulation", "Bonds", "Data", "monthly_rate_and_yields.xlsx")
+    data = os.path.join(root, "Simulation", "Bonds", "Data", "monthly_rates.xlsx")
 
     estimator = VasicekEstimator(data, 12)
     kappa, theta, beta = estimator.estimate_params()
