@@ -10,6 +10,7 @@ from scipy.optimize import minimize
 import matplotlib.pyplot as plt
 import os
 import subprocess
+import openpyxl
 #%% md
 # # Define Functions
 # This section defines the functions used for calculating portfolio volatility, expected return, 
@@ -61,13 +62,15 @@ def r_req_f(goal_vector, goal_allocation, pool):
 #Monte Carlo Trials
 n_trials = 10**5
 
+#Case Study Profile Selection
+Profile = "P1" #Either P1 or P2
+
 #Excel worksheets
 excel_returns = "Returns"
 excel_volatilities = "Volatilities"
 excel_correlation = "Correlation"
-
-#Case Study Profile Selection
-Profile = "P1" #Either P1 or P2
+excel_gbi = "GBI Allocations P1" if Profile == "P1" else "GBI Allocations P2"
+excel_gbi_goals = "GBI Goals P1" if Profile == "P1" else "GBI Goals P2"
 
 # Total pool of wealth
 pool = 4654000
@@ -126,6 +129,13 @@ for asset in df_returns.index:
     }
 
 capital_market_expectations_raw = pd.DataFrame.from_dict(capital_market_expectations_raw, orient='index')
+
+capital_market_expectations_raw = capital_market_expectations_raw.reset_index()
+capital_market_expectations_raw.rename(columns={'index': 'Unnamed: 0'}, inplace=True)
+
+# Rearrange columns to match your old format (optional):
+capital_market_expectations_raw = capital_market_expectations_raw[['Unnamed: 0', 'Return Forecast', 'Volatility Forecast']]
+
 print(capital_market_expectations_raw)
 #%%
 def get_goal_data(master_excel_path, plan=Profile):
@@ -425,3 +435,61 @@ print(df_across_goal.to_string(index=False))
 
 print("\nOptimal Aggregate Investment Allocation:")
 print(df_aggregate.to_string(index=False))
+
+#%%
+# -- Export Investment Weights to Excel -- #
+
+
+# Determine the correct worksheet based on the profile
+
+# Load the Excel workbook and the relevant sheet
+wb = openpyxl.load_workbook(master_excel_path)
+ws = wb[excel_gbi]
+
+# Find the column that matches loop_year
+# Assume years start in column B (index 2) and row 1 has the year headers
+year_col = None
+for col in range(2, ws.max_column + 1):
+    cell_value = ws.cell(row=1, column=col).value
+    if cell_value == str(loop_year):
+        year_col = col
+        break
+
+if year_col is None:
+    raise ValueError(f"Year {loop_year} not found in worksheet headers.")
+
+# Write each allocation to the appropriate asset row (rows 2 to 7 for assets A2 to A7)
+for i, asset in enumerate(asset_names):
+    allocation = float(np.round(optimal_aggregate_portfolio[i] * 100, 2))
+    row = i + 2  # A2 is row 2
+    ws.cell(row=row, column=year_col, value=allocation)
+
+#%%
+# -- Export Goal Weights to Excel -- #
+
+# Determine the correct worksheet for across-goal allocations
+ws_goals = wb[excel_gbi_goals]
+
+# Find the column in the goal sheet that matches loop_year
+goal_year_col = None
+for col in range(2, ws_goals.max_column + 1):
+    cell_value = ws_goals.cell(row=1, column=col).value
+    if str(cell_value).strip() == str(loop_year):
+        goal_year_col = col
+        break
+
+if goal_year_col is None:
+    raise ValueError(f"Year {loop_year} not found in goal worksheet headers.")
+
+# Write each across-goal allocation to the appropriate row
+for i, allocation in enumerate(df_across_goal["Allocation (%)"]):
+    value = float(np.round(allocation, 6))  # keep precision
+    row = i + 2  # assuming goals start at row 2
+    cell = ws_goals.cell(row=row, column=goal_year_col, value=value)
+    cell.number_format = '0.00%'  # percentage format
+#%%
+# -- Modify Loop Check -- #
+
+# After the rest of the code runs successfull, change the excel loop to Yes, otherwise do not change it.
+#%%
+wb.save(master_excel_path)
