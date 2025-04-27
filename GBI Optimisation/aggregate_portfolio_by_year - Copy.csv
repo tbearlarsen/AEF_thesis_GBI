@@ -1,0 +1,307 @@
+Year,Asset,Weight,Allocation (%),Invested Amt (DKK)
+2025,Emerging Markets - Equities,0.18488906938525157,18.49,0.0
+2025,Developed Markets - Equities,0.2216638814069738,22.17,0.0
+2025,Emerging Markets State - Obligations,0.2393926807889618,23.94,0.0
+2025,High Yield Bonds - Obligations,0.24983596640281644,24.98,0.0
+2025,Investment Grade Bonds - Obligations,0.06092959944211141,6.09,0.0
+2025,Government ZC Bonds - Obligations,0.04328880257388486,4.33,0.0
+2026,Emerging Markets - Equities,0.9579286135264229,95.79,50430.34344482124
+2026,Developed Markets - Equities,0.009763901420070917,0.98,514.0225430399175
+2026,Emerging Markets State - Obligations,0.0011781401852409019,0.12,62.02342568004433
+2026,High Yield Bonds - Obligations,0.01085313478236134,1.09,571.3654512443692
+2026,Investment Grade Bonds - Obligations,0.009455102832715407,0.95,497.76577964886917
+2026,Government ZC Bonds - Obligations,0.010821107253188517,1.08,569.6793555655602
+2027,Emerging Markets - Equities,0.9424204244333716,94.24,139922.82387100343
+2027,Developed Markets - Equities,0.0056536046705193375,0.57,839.4006645441581
+2027,Emerging Markets State - Obligations,0.01598569974948853,1.6,2373.425057980123
+2027,High Yield Bonds - Obligations,0.005876828879263804,0.59,872.5431568269156
+2027,Investment Grade Bonds - Obligations,0.01335032597426512,1.34,1982.1464619049625
+2027,Government ZC Bonds - Obligations,0.016713116293091777,1.67,2481.425876163417
+2028,Emerging Markets - Equities,0.22211824580771838,22.21,72744.54497006921
+2028,Developed Markets - Equities,0.0030744808955268875,0.31,1006.9038360670444
+2028,Emerging Markets State - Obligations,0.003455359967737387,0.35,1131.6431374054855
+2028,High Yield Bonds - Obligations,0.0033273947168398297,0.33,1089.734045630189
+2028,Investment Grade Bonds - Obligations,0.002241985293044022,0.22,734.2584549009047
+2028,Government ZC Bonds - Obligations,0.7657825333191333,76.58,250796.60488832957
+2029,Emerging Markets - Equities,0.5660535232405544,56.61,336594.3703309599
+2029,Developed Markets - Equities,0.002301984296286345,0.23,1368.836908362428
+2029,Emerging Markets State - Obligations,0.0012940240163396121,0.13,769.4699901865503
+2029,High Yield Bonds - Obligations,0.0022635132315659075,0.23,1345.9607256802574
+2029,Investment Grade Bonds - Obligations,0.0005503157727203352,0.06,327.2361771402292
+2029,Government ZC Bonds - Obligations,0.42753663944253345,42.75,254227.59516226637
+2030,Emerging Markets - Equities,0.5530220700978156,55.3,420472.87323646905
+2030,Developed Markets - Equities,0.0029539335974723985,0.3,2245.9301612669306
+2030,Emerging Markets State - Obligations,0.006400700250209044,0.64,4866.570378384278
+2030,High Yield Bonds - Obligations,0.018495920081545086,1.85,14062.78895607875
+2030,Investment Grade Bonds - Obligations,0.002945595634935252,0.29,2239.5906546640354
+2030,Government ZC Bonds - Obligations,0.4161817803380228,41.62,316430.6786823998
+2031,Emerging Markets - Equities,0.7292904024860887,72.93,927447.5472478135
+2031,Developed Markets - Equities,0.00650638786776756,0.65,8274.253231406074
+2031,Emerging Markets State - Obligations,0.0007671628390431685,0.08,975.6103892013414
+2031,High Yield Bonds - Obligations,0.005802834833643432,0.58,7379.536211090389
+2031,Investment Grade Bonds - Obligations,0.0011878545221733522,0.12,1510.609161071352
+2031,Government ZC Bonds - Obligations,0.2564453574512837,25.64,326124.7055500895
+2032,Emerging Markets - Equities,0.8406248672265018,84.06,1749778.0248501329
+2032,Developed Markets - Equities,0.003601334586115648,0.36,7496.252329185492
+2032,Emerging Markets State - Obligations,0.000500868565301244,0.05,1042.568264479127
+2032,High Yield Bonds - Obligations,0.0008400648645269165,0.08,1748.612367663683
+2032,Investment Grade Bonds - Obligations,0.0019233006807853564,0.19,4003.3900942294417
+2032,Government ZC Bonds - Obligations,0.15250956407676894,15.25,317451.80782178807
+2033,Emerging Markets - Equities,0.6204058460295814,62.04,2080519.312103909
+2033,Developed Markets - Equities,0.22258220772675535,22.26,746425.2386882862
+2033,Emerging Markets State - Obligations,0.008163827329186973,0.82,27377.241087836745
+2033,High Yield Bonds - Obligations,0.004874650374160358,0.49,16347.048159039434
+2033,Investment Grade Bonds - Obligations,0.0005675289009177959,0.06,1903.1974732234887
+2033,Government ZC Bonds - Obligations,0.14340593963939807,14.34,480909.1158627625
+2034,Emerging Markets - Equities,0.15546215208222025,15.55,831790.4966115643
+2034,Developed Markets - Equities,0.0010929283077989837,0.11,5847.644379862685
+2034,Emerging Markets State - Obligations,0.002395983583838728,0.24,12819.559927488614
+2034,High Yield Bonds - Obligations,0.005437445523924318,0.54,29092.711325978078
+2034,Investment Grade Bonds - Obligations,0.0054169066236812,0.54,28982.819228099215
+2034,Government ZC Bonds - Obligations,0.8301945838785365,83.02,4441904.064491171
+2035,Emerging Markets - Equities,0.0,0.0,0.0
+2035,Developed Markets - Equities,0.0,0.0,0.0
+2035,Emerging Markets State - Obligations,0.0,0.0,0.0
+2035,High Yield Bonds - Obligations,0.0,0.0,0.0
+2035,Investment Grade Bonds - Obligations,0.0,0.0,0.0
+2035,Government ZC Bonds - Obligations,1.0,100.0,8484651.854986977
+2036,Emerging Markets - Equities,0.01429663043888326,1.43,123957.38606985113
+2036,Developed Markets - Equities,0.01510661446408847,1.51,130980.26484901448
+2036,Emerging Markets State - Obligations,0.004893194462663852,0.49,42425.91271532227
+2036,High Yield Bonds - Obligations,0.010997410753453694,1.1,95351.85905253596
+2036,Investment Grade Bonds - Obligations,0.015037243508639643,1.5,130378.79149182275
+2036,Government ZC Bonds - Obligations,0.9396689063722711,93.97,8147297.498033446
+2037,Emerging Markets - Equities,0.017180428003111464,1.72,152213.62914277156
+2037,Developed Markets - Equities,0.0068731032367045745,0.69,60893.70922204408
+2037,Emerging Markets State - Obligations,0.028408588462980767,2.84,251691.88730284502
+2037,High Yield Bonds - Obligations,0.006021293045412971,0.6,53346.91699231547
+2037,Investment Grade Bonds - Obligations,0.012615795292379025,1.26,111772.3019256289
+2037,Government ZC Bonds - Obligations,0.9289007919594112,92.89,8229792.682238761
+2038,Emerging Markets - Equities,0.024314971016608712,2.43,220092.86758385345
+2038,Developed Markets - Equities,0.021493856028462863,2.15,194556.85986660433
+2038,Emerging Markets State - Obligations,0.004722790622784754,0.47,42749.486744475886
+2038,High Yield Bonds - Obligations,0.008674632364404926,0.87,78520.54238573667
+2038,Investment Grade Bonds - Obligations,0.026951429726382023,2.7,243957.41413437473
+2038,Government ZC Bonds - Obligations,0.9138423202413567,91.38,8271865.783595517
+2039,Emerging Markets - Equities,0.015226449393921891,1.52,140796.52752156983
+2039,Developed Markets - Equities,0.011374836941470677,1.14,105181.28692053766
+2039,Emerging Markets State - Obligations,0.010728268848927353,1.07,99202.57580534594
+2039,High Yield Bonds - Obligations,0.01788421688564616,1.79,165372.47586733877
+2039,Investment Grade Bonds - Obligations,8.621932990458699e-05,0.01,797.2562704374337
+2039,Government ZC Bonds - Obligations,0.9447000086001293,94.47,8735488.97181444
+2040,Emerging Markets - Equities,0.005377243070124331,0.54,49217.918655408444
+2040,Developed Markets - Equities,0.004665728409918694,0.47,42705.42327228232
+2040,Emerging Markets State - Obligations,0.003919216853241525,0.39,35872.60121222066
+2040,High Yield Bonds - Obligations,0.012328846981709485,1.23,112845.96585043814
+2040,Investment Grade Bonds - Obligations,0.012618421474419621,1.26,115496.44187337883
+2040,Government ZC Bonds - Obligations,0.9610905432105864,96.11,8796864.03596541
+2041,Emerging Markets - Equities,0.006147646060627038,0.61,57535.358789922495
+2041,Developed Markets - Equities,0.0010366122958664662,0.1,9701.576795499377
+2041,Emerging Markets State - Obligations,0.00390475414980477,0.39,36544.30147407373
+2041,High Yield Bonds - Obligations,0.001637641125183726,0.16,15326.560569260835
+2041,Investment Grade Bonds - Obligations,0.005925423438886634,0.59,55455.59392594344
+2041,Government ZC Bonds - Obligations,0.9813479229296314,98.13,9184361.670577796
+2042,Emerging Markets - Equities,0.0016482775176137046,0.16,15770.726948426078
+2042,Developed Markets - Equities,0.0007814985673715201,0.08,7477.381924401691
+2042,Emerging Markets State - Obligations,0.002019792187862073,0.2,19325.381039870597
+2042,High Yield Bonds - Obligations,0.0007012674227700207,0.07,6709.729960003256
+2042,Investment Grade Bonds - Obligations,0.0004940399823526894,0.05,4726.976847059993
+2042,Government ZC Bonds - Obligations,0.99435512432203,99.44,9513994.450494114
+2043,Emerging Markets - Equities,0.002990535364109432,0.3,29248.004531202536
+2043,Developed Markets - Equities,0.002566052108524714,0.26,25096.477573266475
+2043,Emerging Markets State - Obligations,0.0003833723897766589,0.04,3749.4548728283667
+2043,High Yield Bonds - Obligations,0.0014848786433620247,0.15,14522.395491641862
+2043,Investment Grade Bonds - Obligations,0.00019139216013138976,0.02,1871.8517205786463
+2043,Government ZC Bonds - Obligations,0.9923837693340958,99.24,9705701.972469091
+2044,Emerging Markets - Equities,0.0,0.0,0.0
+2044,Developed Markets - Equities,0.0,0.0,0.0
+2044,Emerging Markets State - Obligations,0.0,0.0,0.0
+2044,High Yield Bonds - Obligations,0.0,0.0,0.0
+2044,Investment Grade Bonds - Obligations,0.0,0.0,0.0
+2044,Government ZC Bonds - Obligations,1.0,100.0,10004997.59211692
+2045,Emerging Markets - Equities,0.0,0.0,0.0
+2045,Developed Markets - Equities,0.0,0.0,0.0
+2045,Emerging Markets State - Obligations,0.0,0.0,0.0
+2045,High Yield Bonds - Obligations,0.0,0.0,0.0
+2045,Investment Grade Bonds - Obligations,0.0,0.0,0.0
+2045,Government ZC Bonds - Obligations,1.0,100.0,10233150.678649127
+2046,Emerging Markets - Equities,0.0,0.0,0.0
+2046,Developed Markets - Equities,0.0,0.0,0.0
+2046,Emerging Markets State - Obligations,0.0,0.0,0.0
+2046,High Yield Bonds - Obligations,0.0,0.0,0.0
+2046,Investment Grade Bonds - Obligations,0.0,0.0,0.0
+2046,Government ZC Bonds - Obligations,1.0,100.0,10464970.042129746
+2047,Emerging Markets - Equities,0.0,0.0,0.0
+2047,Developed Markets - Equities,0.0,0.0,0.0
+2047,Emerging Markets State - Obligations,0.0,0.0,0.0
+2047,High Yield Bonds - Obligations,0.0,0.0,0.0
+2047,Investment Grade Bonds - Obligations,0.0,0.0,0.0
+2047,Government ZC Bonds - Obligations,1.0,100.0,10700508.408382822
+2048,Emerging Markets - Equities,0.0,0.0,0.0
+2048,Developed Markets - Equities,0.0,0.0,0.0
+2048,Emerging Markets State - Obligations,0.0,0.0,0.0
+2048,High Yield Bonds - Obligations,0.0,0.0,0.0
+2048,Investment Grade Bonds - Obligations,0.0,0.0,0.0
+2048,Government ZC Bonds - Obligations,1.0,100.0,10950221.188198514
+2049,Emerging Markets - Equities,0.0,0.0,0.0
+2049,Developed Markets - Equities,0.0,0.0,0.0
+2049,Emerging Markets State - Obligations,0.0,0.0,0.0
+2049,High Yield Bonds - Obligations,0.0,0.0,0.0
+2049,Investment Grade Bonds - Obligations,0.0,0.0,0.0
+2049,Government ZC Bonds - Obligations,1.0,100.0,11203985.255082853
+2050,Emerging Markets - Equities,0.0,0.0,0.0
+2050,Developed Markets - Equities,0.0,0.0,0.0
+2050,Emerging Markets State - Obligations,0.0,0.0,0.0
+2050,High Yield Bonds - Obligations,0.0,0.0,0.0
+2050,Investment Grade Bonds - Obligations,0.0,0.0,0.0
+2050,Government ZC Bonds - Obligations,1.0,100.0,11461859.150154062
+2051,Emerging Markets - Equities,0.0,0.0,0.0
+2051,Developed Markets - Equities,0.0,0.0,0.0
+2051,Emerging Markets State - Obligations,0.0,0.0,0.0
+2051,High Yield Bonds - Obligations,0.0,0.0,0.0
+2051,Investment Grade Bonds - Obligations,0.0,0.0,0.0
+2051,Government ZC Bonds - Obligations,1.0,100.0,11723902.20906922
+2052,Emerging Markets - Equities,0.0,0.0,0.0
+2052,Developed Markets - Equities,0.0,0.0,0.0
+2052,Emerging Markets State - Obligations,0.0,0.0,0.0
+2052,High Yield Bonds - Obligations,0.0,0.0,0.0
+2052,Investment Grade Bonds - Obligations,0.0,0.0,0.0
+2052,Government ZC Bonds - Obligations,1.0,100.0,11990174.572395528
+2053,Emerging Markets - Equities,0.0,0.0,0.0
+2053,Developed Markets - Equities,0.0,0.0,0.0
+2053,Emerging Markets State - Obligations,0.0,0.0,0.0
+2053,High Yield Bonds - Obligations,0.0,0.0,0.0
+2053,Investment Grade Bonds - Obligations,0.0,0.0,0.0
+2053,Government ZC Bonds - Obligations,1.0,100.0,12260737.196113432
+2054,Emerging Markets - Equities,0.0,0.0,0.0
+2054,Developed Markets - Equities,0.0,0.0,0.0
+2054,Emerging Markets State - Obligations,0.0,0.0,0.0
+2054,High Yield Bonds - Obligations,0.0,0.0,0.0
+2054,Investment Grade Bonds - Obligations,0.0,0.0,0.0
+2054,Government ZC Bonds - Obligations,1.0,100.0,12535651.862253245
+2055,Emerging Markets - Equities,0.0,0.0,0.0
+2055,Developed Markets - Equities,0.0,0.0,0.0
+2055,Emerging Markets State - Obligations,0.0,0.0,0.0
+2055,High Yield Bonds - Obligations,0.0,0.0,0.0
+2055,Investment Grade Bonds - Obligations,0.0,0.0,0.0
+2055,Government ZC Bonds - Obligations,1.0,100.0,12814981.189666929
+2056,Emerging Markets - Equities,0.0,0.0,0.0
+2056,Developed Markets - Equities,0.0,0.0,0.0
+2056,Emerging Markets State - Obligations,0.0,0.0,0.0
+2056,High Yield Bonds - Obligations,0.0,0.0,0.0
+2056,Investment Grade Bonds - Obligations,0.0,0.0,0.0
+2056,Government ZC Bonds - Obligations,1.0,100.0,13098788.644936725
+2057,Emerging Markets - Equities,0.0,0.0,0.0
+2057,Developed Markets - Equities,0.0,0.0,0.0
+2057,Emerging Markets State - Obligations,0.0,0.0,0.0
+2057,High Yield Bonds - Obligations,0.0,0.0,0.0
+2057,Investment Grade Bonds - Obligations,0.0,0.0,0.0
+2057,Government ZC Bonds - Obligations,1.0,100.0,13387138.553422349
+2058,Emerging Markets - Equities,0.0,0.0,0.0
+2058,Developed Markets - Equities,0.0,0.0,0.0
+2058,Emerging Markets State - Obligations,0.0,0.0,0.0
+2058,High Yield Bonds - Obligations,0.0,0.0,0.0
+2058,Investment Grade Bonds - Obligations,0.0,0.0,0.0
+2058,Government ZC Bonds - Obligations,1.0,100.0,13680096.11044845
+2059,Emerging Markets - Equities,0.0,0.0,0.0
+2059,Developed Markets - Equities,0.0,0.0,0.0
+2059,Emerging Markets State - Obligations,0.0,0.0,0.0
+2059,High Yield Bonds - Obligations,0.0,0.0,0.0
+2059,Investment Grade Bonds - Obligations,0.0,0.0,0.0
+2059,Government ZC Bonds - Obligations,1.0,100.0,13977727.392634118
+2060,Emerging Markets - Equities,0.0,0.0,0.0
+2060,Developed Markets - Equities,0.0,0.0,0.0
+2060,Emerging Markets State - Obligations,0.0,0.0,0.0
+2060,High Yield Bonds - Obligations,0.0,0.0,0.0
+2060,Investment Grade Bonds - Obligations,0.0,0.0,0.0
+2060,Government ZC Bonds - Obligations,1.0,100.0,14280099.369366184
+2061,Emerging Markets - Equities,0.0,0.0,0.0
+2061,Developed Markets - Equities,0.0,0.0,0.0
+2061,Emerging Markets State - Obligations,0.0,0.0,0.0
+2061,High Yield Bonds - Obligations,0.0,0.0,0.0
+2061,Investment Grade Bonds - Obligations,0.0,0.0,0.0
+2061,Government ZC Bonds - Obligations,1.0,100.0,14600290.448315868
+2062,Emerging Markets - Equities,0.0,0.0,0.0
+2062,Developed Markets - Equities,0.0,0.0,0.0
+2062,Emerging Markets State - Obligations,0.0,0.0,0.0
+2062,High Yield Bonds - Obligations,0.0,0.0,0.0
+2062,Investment Grade Bonds - Obligations,0.0,0.0,0.0
+2062,Government ZC Bonds - Obligations,1.0,100.0,14925639.913044019
+2063,Emerging Markets - Equities,0.0,0.0,0.0
+2063,Developed Markets - Equities,0.0,0.0,0.0
+2063,Emerging Markets State - Obligations,0.0,0.0,0.0
+2063,High Yield Bonds - Obligations,0.0,0.0,0.0
+2063,Investment Grade Bonds - Obligations,0.0,0.0,0.0
+2063,Government ZC Bonds - Obligations,1.0,100.0,15256222.042518293
+2064,Emerging Markets - Equities,0.0,0.0,0.0
+2064,Developed Markets - Equities,0.0,0.0,0.0
+2064,Emerging Markets State - Obligations,0.0,0.0,0.0
+2064,High Yield Bonds - Obligations,0.0,0.0,0.0
+2064,Investment Grade Bonds - Obligations,0.0,0.0,0.0
+2064,Government ZC Bonds - Obligations,1.0,100.0,15592112.1217593
+2065,Emerging Markets - Equities,0.0,0.0,0.0
+2065,Developed Markets - Equities,0.0,0.0,0.0
+2065,Emerging Markets State - Obligations,0.0,0.0,0.0
+2065,High Yield Bonds - Obligations,0.0,0.0,0.0
+2065,Investment Grade Bonds - Obligations,0.0,0.0,0.0
+2065,Government ZC Bonds - Obligations,1.0,100.0,15933386.454954978
+2066,Emerging Markets - Equities,0.0,0.0,0.0
+2066,Developed Markets - Equities,0.0,0.0,0.0
+2066,Emerging Markets State - Obligations,0.0,0.0,0.0
+2066,High Yield Bonds - Obligations,0.0,0.0,0.0
+2066,Investment Grade Bonds - Obligations,0.0,0.0,0.0
+2066,Government ZC Bonds - Obligations,1.0,100.0,16280122.37874156
+2067,Emerging Markets - Equities,0.0,0.0,0.0
+2067,Developed Markets - Equities,0.0,0.0,0.0
+2067,Emerging Markets State - Obligations,0.0,0.0,0.0
+2067,High Yield Bonds - Obligations,0.0,0.0,0.0
+2067,Investment Grade Bonds - Obligations,0.0,0.0,0.0
+2067,Government ZC Bonds - Obligations,1.0,100.0,16632398.27565316
+2068,Emerging Markets - Equities,0.0,0.0,0.0
+2068,Developed Markets - Equities,0.0,0.0,0.0
+2068,Emerging Markets State - Obligations,0.0,0.0,0.0
+2068,High Yield Bonds - Obligations,0.0,0.0,0.0
+2068,Investment Grade Bonds - Obligations,0.0,0.0,0.0
+2068,Government ZC Bonds - Obligations,1.0,100.0,16990293.587742113
+2069,Emerging Markets - Equities,0.0,0.0,0.0
+2069,Developed Markets - Equities,0.0,0.0,0.0
+2069,Emerging Markets State - Obligations,0.0,0.0,0.0
+2069,High Yield Bonds - Obligations,0.0,0.0,0.0
+2069,Investment Grade Bonds - Obligations,0.0,0.0,0.0
+2069,Government ZC Bonds - Obligations,1.0,100.0,17353888.830372214
+2070,Emerging Markets - Equities,0.0,0.0,0.0
+2070,Developed Markets - Equities,0.0,0.0,0.0
+2070,Emerging Markets State - Obligations,0.0,0.0,0.0
+2070,High Yield Bonds - Obligations,0.0,0.0,0.0
+2070,Investment Grade Bonds - Obligations,0.0,0.0,0.0
+2070,Government ZC Bonds - Obligations,1.0,100.0,17723265.60618695
+2071,Emerging Markets - Equities,0.0,0.0,0.0
+2071,Developed Markets - Equities,0.0,0.0,0.0
+2071,Emerging Markets State - Obligations,0.0,0.0,0.0
+2071,High Yield Bonds - Obligations,0.0,0.0,0.0
+2071,Investment Grade Bonds - Obligations,0.0,0.0,0.0
+2071,Government ZC Bonds - Obligations,1.0,100.0,17938980.487218715
+2072,Emerging Markets - Equities,0.0,0.0,0.0
+2072,Developed Markets - Equities,0.0,0.0,0.0
+2072,Emerging Markets State - Obligations,0.0,0.0,0.0
+2072,High Yield Bonds - Obligations,0.0,0.0,0.0
+2072,Investment Grade Bonds - Obligations,0.0,0.0,0.0
+2072,Government ZC Bonds - Obligations,1.0,100.0,18157197.66087045
+2073,Emerging Markets - Equities,0.0,0.0,0.0
+2073,Developed Markets - Equities,0.0,0.0,0.0
+2073,Emerging Markets State - Obligations,0.0,0.0,0.0
+2073,High Yield Bonds - Obligations,0.0,0.0,0.0
+2073,Investment Grade Bonds - Obligations,0.0,0.0,0.0
+2073,Government ZC Bonds - Obligations,1.0,100.0,18377946.15373655
+2074,Emerging Markets - Equities,0.0,0.0,0.0
+2074,Developed Markets - Equities,0.0,0.0,0.0
+2074,Emerging Markets State - Obligations,0.0,0.0,0.0
+2074,High Yield Bonds - Obligations,0.0,0.0,0.0
+2074,Investment Grade Bonds - Obligations,0.0,0.0,0.0
+2074,Government ZC Bonds - Obligations,1.0,100.0,18601255.329119895
+2075,Emerging Markets - Equities,0.0,0.0,0.0
+2075,Developed Markets - Equities,0.0,0.0,0.0
+2075,Emerging Markets State - Obligations,0.0,0.0,0.0
+2075,High Yield Bonds - Obligations,0.0,0.0,0.0
+2075,Investment Grade Bonds - Obligations,0.0,0.0,0.0
+2075,Government ZC Bonds - Obligations,1.0,100.0,11827154.890937686

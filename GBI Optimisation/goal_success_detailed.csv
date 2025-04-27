@@ -1,0 +1,13 @@
+Goal,Path_ID,Success
+A,0,True
+A,1,True
+A,2,True
+B,0,True
+B,1,True
+B,2,True
+C,0,False
+C,1,False
+C,2,False
+D,0,False
+D,1,False
+D,2,True
