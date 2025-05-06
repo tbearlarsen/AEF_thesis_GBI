@@ -73,7 +73,7 @@ def categorize_redemption(pct):
     elif pct == 0.0:
         return 'None (0%)'
     else:
-        return 'Partial'
+        return 'Partial (1–99%)'
 
 for goal in goal_names:
     goal_data = df[df['Goal'] == goal]
@@ -81,7 +81,7 @@ for goal in goal_names:
     categories = redeemed_by_path.apply(categorize_redemption).value_counts()
 
     fig, ax = plt.subplots(figsize=(8, 5))
-    categories.reindex(['None (0%)', 'Partial', 'Full (100%)']).plot(kind='bar', ax=ax, edgecolor='black', color='#4a90e2')
+    categories.reindex(['None (0%)', 'Partial (1–99%)', 'Full (100%)']).plot(kind='bar', ax=ax, edgecolor='black', color='#4a90e2')
     ax.set_title(f"Goal {goal} Redemption Status Distribution", fontsize=14)
     ax.set_xlabel("Redemption Category", fontsize=12)
     ax.set_ylabel("Number of Paths", fontsize=12)
