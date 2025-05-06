@@ -5,11 +5,8 @@ import pandas as pd
 
 
 folders = [
-    r'C:\Users\admin\CBS - Copenhagen Business School\Thesis - General\Runs\Base\P1\outputs_path_0_to_24',
-    r'C:\Users\admin\CBS - Copenhagen Business School\Thesis - General\Runs\Base\P1\outputs_path_25_to_50',
-    r'C:\Users\admin\CBS - Copenhagen Business School\Thesis - General\Runs\Base\P1\outputs_path_51_to_75',
-    r'C:\Users\admin\CBS - Copenhagen Business School\Thesis - General\Runs\Base\P1\outputs_path_76_100',
-    r'C:\Users\admin\CBS - Copenhagen Business School\Thesis - General\Runs\Base\P1\outputs_path_101_to_200'
+    r'C:\Users\admin\CBS - Copenhagen Business School\Thesis - General\Modelling\P1\P1_outputs_path_0_to_500',
+    r'C:\Users\admin\CBS - Copenhagen Business School\Thesis - General\Modelling\P1\P1_outputs_path_500_to_600',
     # add as many as needed
 ]
 
@@ -28,7 +25,7 @@ file_names = [
 ]
 
 # Output folder
-output_dir = r'C:\Users\admin\CBS - Copenhagen Business School\Thesis - General\Runs\Base\P1'
+output_dir = r'C:\Users\admin\CBS - Copenhagen Business School\Thesis - General\Modelling\P1'
 os.makedirs(output_dir, exist_ok=True)
 
 # Iterate over each file name and combine data
