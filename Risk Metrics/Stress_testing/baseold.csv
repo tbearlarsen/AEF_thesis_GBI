@@ -1,0 +1,17 @@
+Goal,Successes,Failures,source_folder
+A,32,18,P2_outputs_path_0_to_50
+B,28,22,P2_outputs_path_0_to_50
+C,32,18,P2_outputs_path_0_to_50
+D,0,50,P2_outputs_path_0_to_50
+A,34,16,P2_outputs_path_50_to_100
+B,29,21,P2_outputs_path_50_to_100
+C,35,15,P2_outputs_path_50_to_100
+D,0,50,P2_outputs_path_50_to_100
+A,37,13,P2_outputs_path_100_to_150
+B,31,19,P2_outputs_path_100_to_150
+C,34,16,P2_outputs_path_100_to_150
+D,0,50,P2_outputs_path_100_to_150
+A,36,14,P2_outputs_path_150_to_200
+B,36,14,P2_outputs_path_150_to_200
+C,37,13,P2_outputs_path_150_to_200
+D,0,50,P2_outputs_path_150_to_200
